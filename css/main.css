@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Tahoma;
+}
+.product-box {
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #ddd;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.product-box .number {
+    background-color: pink;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 2s;
+}
+.product-box h3 {
+    margin: 15px 0;
+    font-size: 26px;
+    transition: 0.6s;
+}
+.product-box p {
+    line-height: 1.6;
+    font-size: 18px;
+    transition: 0.6s;
+}
+.product-box:hover .number {
+    box-shadow: 0 0 0 260px pink;
+}
+.product-box:hover h3,
+.product-box:hover p {
+    color: white;
+}
